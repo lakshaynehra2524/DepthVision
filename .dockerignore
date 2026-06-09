@@ -1,7 +1,0 @@
-depthvision_env/
-__pycache__/
-.git/
-.ipynb_checkpoints/
-notebooks/
-dataset/
-outputs/
