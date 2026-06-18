@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        DepthVision
+    </title>
+
+    <link rel="stylesheet" href="/frontend/css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="logo">
+            DepthVision
+        </div>
+
+        <div class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/about">
+                About
+            </a>
+
+            <a href="/docs-info">
+                Documentation
+            </a>
+
+            <a href="/docs" target="_blank">
+                API Docs
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+        <h1>
+            DepthVision
+        </h1>
+
+        <p class="subtitle">
+            AI-Based Object Distance & Risk Detection
+        </p>
+
+        <div class="upload-card">
+
+            <input type="file" id="imageInput" accept="image/*">
+
+            <button id="analyzeBtn">
+                Analyze Image
+            </button>
+
+        </div>
+
+        <div id="loading" class="hidden">
+            Running Analysis...
+        </div>
+
+        <div id="results" class="hidden">
+
+            <h2>
+                Annotated Result
+            </h2>
+
+            <img id="resultImage" class="result-image">
+
+            <h2>
+                High Risk Pairs
+            </h2>
+
+            <table id="riskTable">
+            </table>
+
+            <h2>
+                Detected Objects
+            </h2>
+
+            <table id="objectsTable">
+            </table>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+
+        <p>
+            DepthVision v1.0
+        </p>
+
+        <p>
+            Developed by Lakshay Nehra
+        </p>
+
+    </footer>
+    <div class="features" id="featuresSection">
+
+        <h2>
+            Features
+        </h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                Monocular Depth Estimation
+            </div>
+
+            <div class="feature-card">
+                YOLOv8 Object Detection
+            </div>
+
+            <div class="feature-card">
+                Distance Calculation
+            </div>
+
+            <div class="feature-card">
+                Risk Analysis Engine
+            </div>
+
+        </div>
+
+    </div>
+    <script src="/frontend/js/app.js"></script>
+
+</body>
+
+</html>
