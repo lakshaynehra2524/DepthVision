@@ -275,3 +275,5 @@ Interactive Swagger UI generated automatically by FastAPI.
 
 ---
 
+## Developer
+
