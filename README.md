@@ -278,3 +278,5 @@ Interactive Swagger UI generated automatically by FastAPI.
 ## Developer
 
 Lakshay Nehra
+
+Computer Vision | Artificial Intelligence | Machine Learning | FastAPI
