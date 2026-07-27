@@ -11,6 +11,12 @@
         Documentation - DepthVision
     </title>
 
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%91%81%EF%B8%8F</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/frontend/css/style.css">
 
 </head>
@@ -51,105 +57,67 @@
         </h1>
 
         <p class="subtitle">
-
             User Guide & Model Information
-
         </p>
 
-        <div class="upload-card">
+        <div class="info-grid">
 
-            <div>
+            <div class="info-card reveal">
 
                 <h2>
                     Purpose
                 </h2>
 
                 <p>
-
-                    DepthVision estimates object
-                    depth and spatial distances
-                    using a single RGB image.
-
+                    DepthVision estimates object depth and spatial
+                    distances using a single RGB image.
                 </p>
 
-                <br>
+            </div>
+
+            <div class="info-card reveal">
 
                 <h2>
                     Supported Formats
                 </h2>
 
                 <ul>
-
                     <li>JPG</li>
-
                     <li>JPEG</li>
-
                     <li>PNG</li>
-
                 </ul>
 
-                <br>
+            </div>
+
+            <div class="info-card reveal">
 
                 <h2>
                     Workflow
                 </h2>
 
                 <ol>
-
-                    <li>
-                        Upload image
-                    </li>
-
-                    <li>
-                        Depth estimation model
-                        predicts depth map
-                    </li>
-
-                    <li>
-                        YOLOv8 detects objects
-                    </li>
-
-                    <li>
-                        3D coordinates generated
-                    </li>
-
-                    <li>
-                        Distances calculated
-                    </li>
-
-                    <li>
-                        Risk analysis performed
-                    </li>
-
-                    <li>
-                        Annotated image generated
-                    </li>
-
+                    <li>Upload image</li>
+                    <li>Depth estimation model predicts depth map</li>
+                    <li>YOLOv8 detects objects</li>
+                    <li>3D coordinates generated</li>
+                    <li>Distances calculated</li>
+                    <li>Risk analysis performed</li>
+                    <li>Annotated image generated</li>
                 </ol>
 
-                <br>
+            </div>
+
+            <div class="info-card reveal">
 
                 <h2>
                     Output
                 </h2>
 
                 <ul>
-
-                    <li>
-                        Annotated Image
-                    </li>
-
-                    <li>
-                        Detected Objects Table
-                    </li>
-
-                    <li>
-                        High Risk Pair Analysis
-                    </li>
-
+                    <li>Annotated Image</li>
+                    <li>Detected Objects Table</li>
+                    <li>High Risk Pair Analysis</li>
                 </ul>
-
-                <br>
 
             </div>
 
@@ -168,6 +136,8 @@
         </p>
 
     </footer>
+
+    <script src="/frontend/js/common.js"></script>
 
 </body>
 

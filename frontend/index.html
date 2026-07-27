@@ -11,6 +11,12 @@
         DepthVision
     </title>
 
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%91%81%EF%B8%8F</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/frontend/css/style.css">
 
 </head>
@@ -54,9 +60,23 @@
             AI-Based Object Distance & Risk Detection
         </p>
 
-        <div class="upload-card">
+        <div class="upload-card" id="dropZone">
 
-            <input type="file" id="imageInput" accept="image/*">
+            <input type="file" id="imageInput" accept="image/*" hidden>
+
+            <span class="upload-icon">📤</span>
+
+            <p class="upload-text">
+                Drag & drop an image here
+            </p>
+
+            <label for="imageInput" class="add-image-btn">
+                Add Image
+            </label>
+
+            <div id="fileNamePreview" class="file-name hidden"></div>
+
+            <img id="previewThumb" class="preview-thumb hidden" alt="Selected image preview">
 
             <button id="analyzeBtn">
                 Analyze Image
@@ -65,7 +85,8 @@
         </div>
 
         <div id="loading" class="hidden">
-            Running Analysis...
+            <div class="spinner"></div>
+            <p>Analyzing<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
         </div>
 
         <div id="results" class="hidden">
@@ -92,6 +113,38 @@
 
         </div>
 
+        <div class="features" id="featuresSection">
+
+            <h2>
+                Features
+            </h2>
+
+            <div class="feature-grid">
+
+                <div class="feature-card reveal">
+                    <span class="feature-icon">📏</span>
+                    Monocular Depth Estimation
+                </div>
+
+                <div class="feature-card reveal">
+                    <span class="feature-icon">🎯</span>
+                    YOLOv8 Object Detection
+                </div>
+
+                <div class="feature-card reveal">
+                    <span class="feature-icon">📐</span>
+                    Distance Calculation
+                </div>
+
+                <div class="feature-card reveal">
+                    <span class="feature-icon">⚠️</span>
+                    Risk Analysis Engine
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
     <footer class="footer">
@@ -105,33 +158,8 @@
         </p>
 
     </footer>
-    <div class="features" id="featuresSection">
 
-        <h2>
-            Features
-        </h2>
-
-        <div class="feature-grid">
-
-            <div class="feature-card">
-                Monocular Depth Estimation
-            </div>
-
-            <div class="feature-card">
-                YOLOv8 Object Detection
-            </div>
-
-            <div class="feature-card">
-                Distance Calculation
-            </div>
-
-            <div class="feature-card">
-                Risk Analysis Engine
-            </div>
-
-        </div>
-
-    </div>
+    <script src="/frontend/js/common.js"></script>
     <script src="/frontend/js/app.js"></script>
 
 </body>
