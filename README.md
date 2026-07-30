@@ -2,7 +2,7 @@
 
 DepthVision is an AI-powered computer vision web application that combines Monocular Depth Estimation and YOLOv8 Object Detection to analyze scenes and identify high-risk object pairs based on their relative spatial distances.
 
-
+The system predicts scene depth from a single RGB image, detects objects, generates 3D coordinates, calculates inter-object distances, performs risk analysis, and produces annotated visualizations through a FastAPI-powered web interface.
 
 ---
 
