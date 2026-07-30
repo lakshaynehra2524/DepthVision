@@ -52,9 +52,7 @@ def home():
 def about():
     return FileResponse("frontend/about.html")
 
-@app.get("/docs-info")
-def docs_info():
-    return FileResponse("frontend/docs.html")
+
 
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
