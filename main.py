@@ -37,7 +37,11 @@ app = FastAPI(
     version="1.0"
 )
 
-
+app.mount(
+    "/frontend",
+    StaticFiles(directory="frontend"),
+    name="frontend"
+)
 
 
 @app.get("/")
